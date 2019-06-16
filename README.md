@@ -4,8 +4,31 @@
 	<meta charset="UTF-8">
 </head>
 <body>
-	<p align="center"><img src="" alt="Logo/Imagen Proyecto" width="150px" height="150px"></p>
+	<p align="center"><img src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/Spotify.png" alt="Logo/Imagen Proyecto" width="150px" height="150px"></p>
 	<h1 align="center">SpotiApp</h1>
+  <table>
+    <tbody>
+      <tr>
+        <td align="center" valign="middle">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/angular.png" alt="Imagen 1">
+        </td>
+        <td align="center" valign="middle">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/html5.png" alt="Imagen 2">
+        </td>
+        <td align="center" valign="middle">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/bootstrap.png" alt="Imagen 3">
+        </td>
+        <td align="center" valign="middle">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/Spotify.png" alt="Imagen 4">
+        </td>
+      </tr><tr></tr>
+      <tr>
+        <td align="center" valign="middle">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/postman.png" alt="Imagen 5">
+        </td>
+      </tr><tr></tr>
+    </tbody>
+  </table>
 	<h3>Introducción</h3>
   <p>SpotiApp, es un sistema que utiliza la api de Spotify para mostrar los 20 temas más escuchados de la aplicación, a su vez cuenta con un buscador, en donde se pueden realizar busquedas a los diferentes artistas y escuchar sus Top 10 de temas mas reproducidos por Spotify.</p>
   <p>Para el desarrollo de este sistema, su utilizaron las api web que proporciona la página oficial de Spotify para developer https://developer.spotify.com/documentation/web-api/, para esto es necesario seguir las instrucciones que aparecen en dicha página, una vez creado un perfil, la página proporcionara unas api web, para la autentificación de la aplicación, estas credenciales deberan ser utilizadas en Postman https://www.getpostman.com/, por lo cual una vez ingresado estos datos se realizara una solicitud POST al servicio de Spotify para generar un token de acceso, el cual deberemos de pegar en nuestro sistema, este token tiene una duración de 1 hora (3600 Segundos) y debera renovarse de panera periodica durante la etapa de desarrollo para el funcionamiento del sistema.</p>
@@ -42,13 +65,32 @@
   </ul>
   <p>Se utilizo un servicio para el manejo de los datos de la api de spotify.</p>
 	<h3>Vistas del sistema</h3>
-	<p>Imagenes</p>
-
-	
-
-
-
-
+  <table>
+    <tbody>
+      <tr>
+        <td align="center" valign="middle">
+          <img width="300px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-proyect/SpotiApp/postman.PNG" alt="Imagen 1">
+        </td>
+        <td align="center" valign="middle">
+          <img width="300px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-proyect/SpotiApp/service.PNG" alt="Imagen 2">
+        </td>
+        <td align="center" valign="middle">
+          <img width="300px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-proyect/SpotiApp/index1.PNG" alt="Imagen 3">
+        </td>
+      </tr><tr></tr>
+      <tr>
+        <td align="center" valign="middle">
+          <img width="300px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-proyect/SpotiApp/index2.PNG" alt="Imagen 4">
+        </td>
+        <td align="center" valign="middle">
+          <img width="300px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-proyect/SpotiApp/busqueda.PNG" alt="Imagen 5">
+        </td>
+        <td align="center" valign="middle">
+          <img width="300px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-proyect/SpotiApp/artista.PNG" alt="Imagen 6">
+        </td>
+      </tr><tr></tr>
+    </tbody>
+  </table>
 </body>
 </html>
 # Spotiapp
