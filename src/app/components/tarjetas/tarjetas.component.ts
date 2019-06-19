@@ -9,8 +9,9 @@ import { Router } from '@angular/router';
 export class TarjetasComponent {
 
   @Input() items: any[] = [];
-
+//carga el url solicitado
   constructor( private router: Router ) { }
+  //Carga la información del artista
   verArtista( item: any ) {
     let artistaId;
 

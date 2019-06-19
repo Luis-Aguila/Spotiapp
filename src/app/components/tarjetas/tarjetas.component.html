@@ -1,5 +1,5 @@
 <div class="card-columns m-5 animated fadeIn">
-
+    <!--Targetas de artistas, al hacer click, envia la id del artista y lo mustra -->
     <div (click)="verArtista( item )" *ngFor="let item of items" class="card puntero">
         <img class="card-img-top" [src]="item.images | noimage" alt="Card image cap">
         <div class="card-body">

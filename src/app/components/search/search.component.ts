@@ -7,11 +7,14 @@ import { SpotifyService } from '../../services/spotify.service';
   styles: []
 })
 export class SearchComponent {
-
+//inicialización de variables de clase
   artistas: any[] = [];
   loading: boolean;
-
+//Se inicia servicio de spotify
   constructor(private spotify: SpotifyService) {  }
+
+  //Función buscar...se ingresa un caracter y comienza la busqueda
+  //La letra o palabra a buscar sera mostrada en la consola y si encuentra resultados la mostrara en pantalla
   buscar(termino: string) {
     console.log(termino);
     this.loading = true;

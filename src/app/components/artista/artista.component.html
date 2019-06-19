@@ -1,5 +1,6 @@
+<!--Icono de carga...se miestra si loading es true-->
 <app-loading *ngIf="loading"></app-loading>
-
+<!--Se carga una primera vista del artista...se muestra su imagen y el nombre-->
 <div class="row animated fadeIn" *ngIf="!loading">
     <div class="col-2">
         <img [src]="artista.images | noimage" alt="" class="img-thumbnail img-circle">
@@ -13,7 +14,7 @@
             </a>
         </p>
     </div>
-
+    <!--Boton de regreso al buscador-->
     <div class="col-4 text-right">
         <button routerLink="/search" class="btn btn-outline-danger">Regresar</button>
     </div>
@@ -21,9 +22,11 @@
 
 <div class="row">
     <div class="col">
+        <!--Tabla con información de sus toptrack del artista-->
         <table class="table">
             <thead>
                 <tr>
+                    <!--Información de tema o track-->
                     <th>Foto</th>
                     <th>Album</th>
                     <th>Canción</th>
@@ -31,12 +34,17 @@
                 </tr>
             </thead>
             <tbody>
+                <!--Siempre que el artista tenga un toptrack se mostrara en los cuadros de tablas-->
                 <tr *ngFor="let track of topTracks">
+                    <!--Carga de imagen de albun-->
                     <td>
                         <img [src]="track.album.images | noimage" class="img-thumb">
                     </td>
+                    <!--Nombre de albun-->
                     <td>{{track.album.name}}</td>
+                    <!--Nombre del tema o track-->
                     <td>{{track.name}}</td>
+                    <!--Mini reproductor-->
                     <td>
                         <!--<audio [src]="track.preview_url" controls></audio>-->
                         <iframe [src]="track.uri | domseguro" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>

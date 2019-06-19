@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'noimage'
 })
 export class NoimagePipe implements PipeTransform {
-
+//Pipe para la gestion de imagen...si no hoy imagen de la pista o artista, tomara una imagen por defecto
   transform(images: any[]): string {
     if ( !images ) {
       return 'assets/img/noimage.png';
